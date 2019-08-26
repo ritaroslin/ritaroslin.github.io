@@ -3,11 +3,13 @@
 body {
     color: #191919;
     font-family: proxima-nova, sans-serif;
+    overflow-y:scroll;
 }
 
 img {
     vertical-align: baseline;
 }
+
 
 /*--------------------------------------------------------------
 # Links
@@ -87,6 +89,7 @@ a:hover, a:active {
 .site-title {
     margin: 0;
     text-align: center;
+    padding: 28px 0 0 0;
 }
 
 .site-navigation .site-title a {
@@ -133,18 +136,7 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 992px) {
-    .site-header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 999;
-        width: 100%;
-        padding: 15px 30px;
-        background: #fff;
-        box-shadow: 0 12px 24px rgba(0,0,0,.09);
-    }
 
-    .site-header,
     .hamburger-menu {
         display: flex;
         justify-content: space-between;
@@ -205,7 +197,6 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 992px) {
-    .site-header,
     .site-navigation {
         position: fixed;
         top: 0;
@@ -225,21 +216,9 @@ a:hover, a:active {
         left: 80px;
     }
 
-    .site-header {
-        background: #fff;
-    }
-
-    .site-header.no-shadow {
-        box-shadow: none;
-    }
-
-    .site-header .site-branding.hide {
-        visibility: hidden;
-        opacity: 0;
-    }
 
     .site-title {
-        padding: 28px 0 10px 0;
+        padding: 28px 0 0 0;
     }
 
     .hamburger-menu .menu-icon,
