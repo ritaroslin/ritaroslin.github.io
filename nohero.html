@@ -1,76 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <title>Rita Roslin</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Rita Roslin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+
   <header>
-    <div class="site-branding">
-        <h1 class="site-title"><a href="index.html" rel="home"><img src="images/logo.jpg" width="200px" alt="Logo"></a></h1>
+    <div class="logo">
+      <a href="index.html">
+      <img src="images/logo.png" width="200px">
+    </a>
     </div>
 
-    <ul class="main-menu flex justify-content-center">
-      <li><a href="index.html">WORK</a></li>
-      <li><a href="gallery.html">GALLERY</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-
+    <ul id="nav" class="nav">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
-</header><!-- .site-header -->
 
+    <div id="menu" class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </header>
 
-<div class="nav-bar-sep d-lg-none"></div>
+  <!--Modal module-->
+  <div id="modal-module" class="modal" onclick="this.style.display='none'">
+    <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <div class="modal-content">
+      <img id="modal-img" style="max-width:100%">
+    </div>
+  </div>
 
-<div class="outer-container">
-    <div class="container single-portfolio">
-        <div class="row">
-            <div class="col-12">
-                <div class="featured-img">
-                    <figure>
-                        <img src="images/nohero-header.jpg" alt="">
-                    </figure>
-                </div><!-- .content-area -->
-            </div><!-- .col-12 -->
+  <!-- Feed -->
+  <div class="grid-layout">
 
-            <div class="col-12 col-lg-8">
-                <div class="content-area">
-                    <header class="entry-header">
-                        <h1>No:Hero</h1>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <p>
-                          The No:Hero jacket is part of the collection Enter:Void.
-A futuristic dystopia collection based on Ryûtarô Nakamuras classic anime Serial Experiment Lain mixed with the amazing Tokyo Ghoul.
-                      </p>
-                    </div><!-- .entry-content -->
-                </div><!-- .content-area -->
-            </div><!-- .col-12 -->
-        </div><!-- .row -->
-
-        <div class="galleryWrap">
-        <img src="images/nohero-1.jpg" class="gallery">
-        <img src="images/nohero-2.jpg" class="gallery">
-        <img src="images/nohero-3.jpg" class="gallery">
-        <img src="images/nohero-4.jpg" class="gallery">
-        <img src="images/nohero-5.jpg" class="gallery">
+    <div class="grid-item span-4-3">
+      <div class="grid-text">
+        <p style="margin-top: -30px;">No:Hero<br>2018</p>
+        The No:Hero jacket is part of the collection Enter:Void.
+        A futuristic dystopia collection based on Ryûtarô Nakamuras classic anime Serial Experiment Lain mixed with the amazing Tokyo Ghoul.
 
       </div>
+    </div>
 
-        <div class="row">
-            <div class="col">
+    <div class="grid-item span-3-5">
+      <img src="images/nohero/nohero-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
 
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .container -->
-</div><!-- .outer-container -->
+    <div class="grid-item span-3-5">
+      <img src="images/nohero/nohero-2.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
 
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type='text/javascript' src='js/custom.js'></script>
+    <div class="grid-item span-3-5">
+      <img src="images/nohero/nohero-3.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
 
+    </div>
+
+    <div class="grid-item span-3-5">
+      <img src="images/nohero/nohero-4.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+
+    </div>
+
+    <div class="grid-item span-3-5">
+      <img src="images/nohero/nohero-5.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+
+    </div>
+
+    <div class="grid-item span-3-5">
+      <img src="images/nohero/nohero-6.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-3-5">
+      <img src="images/nohero/nohero-7.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://unpkg.com/colcade@0/colcade.js'></script>
+  <script src="scripts/colcade.js"></script>
+  <script src="scripts/modal.js"></script>
 </body>
 </html>

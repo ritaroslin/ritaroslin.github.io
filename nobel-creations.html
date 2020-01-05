@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rita Roslin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+      <img src="images/logo.png" width="200px">
+    </a>
+    </div>
+
+    <ul id="nav" class="nav">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div id="menu" class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </header>
+
+  <!--Modal module-->
+  <div id="modal-module" class="modal" onclick="this.style.display='none'">
+    <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <div class="modal-content">
+      <img id="modal-img" style="max-width:100%">
+    </div>
+  </div>
+
+  <!-- Feed -->
+<div class="grid-layout">
+
+    <div class="grid-item span-4-4">
+      <div class="grid-text">
+        <p style="margin-top: -30px;">Nobel Creations<br>2018</p>
+        Nobel Creations is an annual project at Beckmans school of design.
+        The brief is to make an creatively free interpretation of an assigned nobel prize, in the form of a gala dress.
+        The Prize in economic science in memory of Alfred Nobel 2017 was assigned Richard H. Thaler, and the creation was a collaboration between Rita Roslin and Alida Bard.
+      </div>
+    </div>
+
+    <div class="grid-item span-4-5">
+      <img src="images/nobel-creations/nobel-creations-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-5">
+      <img src="images/nobel-creations/nobel-creations-2.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-4">
+      <div class="grid-text" style="margin-top: 0px;">
+        The dress is an expression of the romantic decadence in the lacking of self restraint and limited rationality. A pair of voluntary restraining gloves, an unreasonable big skirt made out of 100 meter tulle, and traditional jewellery incased in latex is all symbols for the clash of behavioural economic’s influence on people and the Nobel ceremony as an institution.
+</div>
+    </div>
+
+    <div class="grid-item span-4-5">
+      <img src="images/nobel-creations/nobel-creations-3.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-5">
+      <img src="images/nobel-creations/nobel-creations-4.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-5">
+      <img src="images/nobel-creations/publications-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-1">
+      <div class="grid-text" style="margin-top: 0px;">
+        Featured in Contributor Magazine.
+    </div>
+
+
+  </div>
+  <!-- partial -->
+  <script src='https://unpkg.com/colcade@0/colcade.js'></script>
+  <script src="scripts/colcade.js"></script>
+  <script src="scripts/modal.js"></script>
+</body>
+</html>

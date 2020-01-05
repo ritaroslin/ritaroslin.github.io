@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rita Roslin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+      <img src="images/logo.png" width="200px">
+    </a>
+    </div>
+
+    <ul id="nav" class="nav">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div id="menu" class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </header>
+
+  <!--Modal module-->
+  <div id="modal-module" class="modal" onclick="this.style.display='none'">
+    <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <div class="modal-content">
+      <img id="modal-img" style="max-width:100%">
+    </div>
+  </div>
+
+  <!-- Feed -->
+<div class="grid-layout">
+
+    <div class="grid-item span-4-5">
+      <div class="grid-text">
+        <p style="margin-top: -30px;">Feed The Simulation<br>2018</p>
+        An homage to classic sci-fi aesthetic and couture opulence.
+        Classic beauty with new artificiall blood
+        3D-printed accessory with matching printed fingers.
+        Over a 100 individual pieces, all linked and painted by hand.
+        The skirt is made out of handpainted crinolin netting and handmade bias binding, all stitched together by hand. Corsett in italian silk, padded and quilted in a biomechanic inspired pattern.
+      </div>
+    </div>
+
+    <div class="grid-item span-5-4">
+      <img src="images\feed-the-simulation\feed-the-simulation-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-3-3">
+      <img src="images\feed-the-simulation\feed-the-simulation-2.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-3">
+      <img src="images\feed-the-simulation\feed-the-simulation-3.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-4">
+        <img src="images\feed-the-simulation\feed-the-simulation-4.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-4-3">
+      <img src="images\feed-the-simulation\feed-the-simulation-5.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+     <div class="grid-item span-3-3">
+      <img src="images\feed-the-simulation\feed-the-simulation-6.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item span-3-3">
+      <img src="images\feed-the-simulation\feed-the-simulation-7.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+  </div>
+  <!-- partial -->
+
+  <script src="scripts/modal.js"></script>
+</body>
+</html>

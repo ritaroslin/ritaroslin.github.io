@@ -1,56 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
+  <meta charset="UTF-8">
   <title>Rita Roslin</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
 
+</head>
 <body>
+
   <header>
-    <div class="site-branding">
-      <h1 class="site-title"><a href="index.html" rel="home"><img src="images/logo.jpg" width="200px" alt="Logo"></a></h1>
+    <div class="logo">
+      <a href="index.html">
+      <img src="images/logo.png" width="200px">
+    </a>
     </div>
 
-    <ul class="main-menu flex justify-content-center">
-      <li><a href="index.html">WORK</a></li>
-      <li><a href="gallery.html">GALLERY</a></li>
-      <li><a href="about.html">ABOUT</a></li>
-
+    <ul id="nav" class="nav">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
-  </header><!-- .site-header -->
 
-  <div class="nav-bar-sep d-lg-none"></div>
+    <div id="menu" class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </header>
 
-  <div class="outer-container">
-    <div class="container single-portfolio">
-      <div class="row">
-        <div>
-          <div class="content-area">
-            <header class="entry-header">
-              <h1>Rita Roslin, fashion designer & illustrator</h1>
-            </header><!-- .entry-header -->
+  <!-- Feed -->
+<div class="grid-layout">
 
-            <div class="entry-content">
-              <p>
-                Fashion Design Alumni, Istituto Marangoni, Milan, Italy 2016<br>
-                Currently studying BA Fashion Design at Beckmans college of design in Stockholm<br>
-                <br>
-                I gladly do custom design, illustration, or cool/awfully artsy /fun project. <br>
-                Contact for further inquiries or questions.<br>
-                will probably be up for it.<br>
-                <br>
-                Rita.roslin@edu.beckmans.se
-
-              </p>
-            </div><!-- .entry-content -->
-          </div><!-- .content-area -->
-        </div><!-- .col-12 -->
-      </div><!-- .row -->
-    </div><!-- .container -->
-  </div><!-- .outer-container -->
+    <div class="grid-item span-3-3">
+      <div class="grid-text">
+        <p style="margin-top: -30px;">Rita Roslin</p>
+Studied fashion design at Marangoni, milano.<br>
+Fashion design at beckmans.
+<br><br>
+General inquiries, comissions, buy requests:
+<br><u>rita.h.roslin@gmail.com</u>
+<br><br>
+CV available upon request.
+      </div>
+    </div>
+    <div class="grid-item span-4-7">
+      <img src="images/sleepy/sleepy-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+  </div>
+</div>
+  <!-- partial -->
 
 </body>
 </html>
