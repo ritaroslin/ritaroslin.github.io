@@ -109,8 +109,9 @@ body {
   padding: 10px 10px;
   text-decoration: none;
 color: black;
-font-size:105px;
 font-family: New Font Regular;
+font-size:6rem;
+line-height: 6rem;
 }
 
 .header li a:hover,
@@ -215,7 +216,8 @@ font-family: New Font Regular;
   }
   .header li a {
     padding: 20px 30px;
-    font-size:45px;
+    font-size:3rem;
+    line-height: 3rem;
   }
   .header .menu {
     clear: none;
