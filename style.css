@@ -28,7 +28,7 @@ body {
   font-family: AmericanTypewriterStd;
   line-height: 2.8rem;
   font-weight: 900;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   padding: 25px;
   transition: transform .15s;
   max-width: 100vw;
@@ -121,7 +121,9 @@ font-family: New Font Regular;
 .header .logo {
   display: block;
   float: left;
-  padding: 10px 20px;
+  width:45vw;
+  max-width:200px;
+  padding: 15px 20px;
 }
 
 /* menu */
@@ -222,6 +224,10 @@ font-family: New Font Regular;
   }
   .header .menu-icon {
     display: none;
+  }
+
+  .header .logo {
+    padding: 10px 20px;
   }
 
   .grid-item {
