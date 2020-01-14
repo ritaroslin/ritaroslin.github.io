@@ -40,7 +40,7 @@ body {
 }
 
 /* 2 columns at medium size */
-@media (min-width: 660px) {
+@media (min-width: 660px) and (orientation: landscape) {
   .grid-col:nth-child(2) {
     display: block;
   }
@@ -166,7 +166,7 @@ header .nav li:hover::after {
   transform: translateY(-3px) rotate(-90deg);
 }
 
-@media all and (max-width: 768px) {
+@media all and (orientation: portrait) {
   header .nav li a {
     font-size: 80px;
   }
