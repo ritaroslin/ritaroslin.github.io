@@ -36,37 +36,46 @@
   </div>
 
   <!-- Feed -->
-  <div class="grid-layout">
+  <div class="grid">
+    <div class="grid-col"></div>
+    <div class="grid-col"></div>
+    <div class="grid-col"></div>
+    <div class="grid-col"></div>
 
-    <div class="grid-item span-3-5">
-      <div class="grid-text">
-        <p style="margin-top: -30px;">Ju<br>2019</p>
-        A zero waste project in 100% recycled polyester.
-        A two piece set with inspiration from Ju-justsu.
-        The pattern making is done in a way so that there is no waste, every single piece of fabric is used.
-        Even the threads that are cut off during sewing were saved and used as padding for accessories.
-      </div>
+    <!-- Items below -->
+    <div class="grid-item" style="padding:0px">
+      <img src="text\ju-text.jpg" style="max-width:100%;cursor:pointer">
     </div>
 
-    <div class="grid-item span-4-6">
+    <div class="grid-item">
       <img src="images\ju\ju-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
 
-    <div class="grid-item span-3-5">
+    <div class="grid-item">
+      <img src="images\ju\ju-2.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+    
+    <div class="grid-item" style="padding:0px">
+      <img src="text\ju-text-2.jpg" style="max-width:100%;cursor:pointer">
+    </div>
+
+    <div class="grid-item">
+      <img src="images\ju\ju-3.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+
+    <div class="grid-item">
       <img src="images\ju\ju-2.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
 
-    <div class="grid-item span-3-2">
-      <div class="grid-text" style="margin-top: 0px;">
-        Leftover thread from the overlocking was used as padding in a ring.
-      </div>
-    </div>
-
-    <div class="grid-item span-3-3">
+    <div class="grid-item">
       <img src="images\ju\ju-3.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
+
   </div>
   <!-- partial -->
+  <script src='https://unpkg.com/colcade@0/colcade.js'></script>
+  <script src="scripts/colcade.js"></script>
   <script src="scripts/modal.js"></script>
 </body>
 </html>
