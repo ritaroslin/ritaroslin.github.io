@@ -79,7 +79,7 @@
             if(options.styling){
                 styles.profile_container = " style='text-align:center;'";
                 styles.profile_image = " style='border-radius:10em;width:15%;max-width:125px;min-width:50px;'";
-                styles.profile_name = " style='font-size:1.2em;'";
+                //styles.profile_name = " style='font-size:1.2em;'";
                 styles.profile_biography = " style='font-size:1em;'";
                 var width = (100 - options.margin * 2 * options.items_per_row)/options.items_per_row;
                 styles.gallery_image = " style='margin:"+options.margin+"% "+options.margin+"%;width:"+width+"%;float:left;'";
