@@ -238,7 +238,8 @@ line-height: 4rem;
   }
 
   .grid-comment {
-    margin-top: 15px;
+    margin-top: 18px;
+    margin-bottom: 0px;
     line-height: 1.4;
     width: auto;
   }
