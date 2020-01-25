@@ -27,10 +27,17 @@
   <ul class="menu">
     <li><a href="index.html">Portfolio</a></li>
     <li><a href="archive.html">Archive</a></li>
-    <li><a href="about.html">About</a></li>
+
   </ul>
 </header>
 
+<!--Modal module-->
+<div id="modal-module" class="modal" onclick="this.style.display='none'">
+  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <div class="modal-content">
+    <img id="modal-img" style="max-width:100%">
+  </div>
+</div>
 
   <!-- Feed -->
   <div class="grid">
@@ -46,7 +53,10 @@
       <img src="images\feed-the-simulation\feed-the-simulation-1.jpg" style="width:100%;cursor:pointer">
         </a>
         <div class="grid-comment">
-        Feed The Simulation
+        Feed The Simulation<br>
+      </div>
+      <div class="category">
+        // Fashion
       </div>
     </div>
 
@@ -57,50 +67,8 @@
         <div class="grid-comment">
           Loba
         </div>
-      </div>
-
-      <div class="grid-item">
-        <a href="fusion.html">
-        <img src="images\fusion\fusion-1.jpg" style="width:100%;cursor:pointer">
-          </a>
-        <div class="grid-comment">
-          Fusion
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <a href="ju.html">
-        <img src="images\ju\ju-2.jpg" style="width:100%;cursor:pointer">
-          </a>
-        <div class="grid-comment">
-          JU
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <a href="spectra.html">
-        <img src="images\spectra\spectra-1.jpg" style="width:100%;cursor:pointer">
-          </a>
-        <div class="grid-comment">
-          Spectra
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <a href="nobel-creations.html">
-        <img src="images\nobel-creations\nobel-creations-1.jpg" style="width:100%;cursor:pointer">
-          </a>
-        <div class="grid-comment">
-          Nobel Creations
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <a href="nohero.html">
-        <img src="images\nohero\nohero-1.jpg" style="width:100%;cursor:pointer">
-          </a>
-        <div class="grid-comment">
-          No:Hero
+        <div class="category">
+          // Fashion
         </div>
       </div>
 
@@ -111,7 +79,68 @@
         <div class="grid-comment">
          Sleepy
         </div>
+        <div class="category">
+          // Fashion
+        </div>
       </div>
+
+      <div class="grid-item">
+        <a href="ju.html">
+        <img src="images\ju\ju-2.jpg" style="width:100%;cursor:pointer">
+          </a>
+        <div class="grid-comment">
+          JU
+        </div>
+        <div class="category">
+          // Fashion
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <a href="spectra.html">
+        <img src="images\spectra\spectra-1.jpg" style="width:100%;cursor:pointer">
+          </a>
+        <div class="grid-comment">
+          Spectra
+        </div>
+        <div class="category">
+          // Print
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <a href="nobel-creations.html">
+        <img src="images\nobel-creations\nobel-creations-1.jpg" style="width:100%;cursor:pointer">
+          </a>
+        <div class="grid-comment">
+          Nobel Creations
+        </div>
+        <div class="category">
+          // Fashion
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <a href="nohero.html">
+        <img src="images\nohero\nohero-1.jpg" style="width:100%;cursor:pointer">
+          </a>
+        <div class="grid-comment">
+          No:Hero
+        </div>
+        <div class="category">
+          // Fashion
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="images\fusion/fusion-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+      <div class="grid-comment">
+        Fusion
+      </div>
+      <div class="category">
+        // Print &nbsp // Illustration
+      </div>
+    </div>
 
       <div class="grid-item">
         <a href="we-burn.html">
@@ -120,12 +149,15 @@
         <div class="grid-comment">
          We Burn
         </div>
+        <div class="category">
+          // Fashion
+        </div>
       </div>
 
   </div>
   <!-- partial -->
   <script src='https://unpkg.com/colcade@0/colcade.js'></script>
   <script src="scripts/colcade.js"></script>
-
+  <script src="scripts/modal.js"></script>
 </body>
 </html>
