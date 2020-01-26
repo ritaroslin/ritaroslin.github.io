@@ -19,8 +19,16 @@ body {
   width: auto;
 }
 
+.grid-text {
+  font-family: AmericanTypewriterStd;
+  line-height: 1.9rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+
 .category {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin-top: 5px;
 margin-bottom: -7px;
 }
@@ -77,12 +85,14 @@ margin-bottom: -7px;
   }
 }
 
+/*
 .grid-item:hover {
   transform: scale(1.015);
   -webkit-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.1);
   box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.1);
 }
+*/
 
 .title-feed {
   line-height: 20px;
@@ -246,7 +256,7 @@ line-height: 4rem;
 
   .grid-item {
     line-height: 1.4;
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .grid-comment {

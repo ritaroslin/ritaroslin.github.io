@@ -15,6 +15,9 @@
   <title>Rita Roslin</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/carousel.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 <body>
@@ -26,18 +29,9 @@
 
   <ul class="menu">
     <li><a href="index.html">Portfolio</a></li>
-    <li><a href="archive.html">Archive</a></li>
-
+    <li><a href="about.html">About</a></li>
   </ul>
 </header>
-
-<!--Modal module-->
-<div id="modal-module" class="modal" onclick="this.style.display='none'">
-  <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-  <div class="modal-content">
-    <img id="modal-img" style="max-width:100%">
-  </div>
-</div>
 
   <!-- Feed -->
   <div class="grid">
@@ -133,14 +127,60 @@
       </div>
 
       <div class="grid-item">
-        <img src="images\fusion/fusion-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
-      <div class="grid-comment">
-        Fusion
-      </div>
-      <div class="category">
-        // Print &nbsp // Illustration
-      </div>
-    </div>
+
+        <!-- partial:index.partial.html -->
+
+
+        <div data-toggle="modal" data-target="#projectA">
+            <a href="#">
+              <img class="img-responsive center-block" src="images\fusion/fusion-1.jpg" />
+            </a>
+          <div class="grid-comment">
+            Fusion
+          </div>
+          <div class="category">
+            // Print &nbsp // Illustration
+          </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="projectA">
+          <div class="modal-dialog" style="height:inherit; margin-bottom:2vh;">
+            <div class="modal-content" style="height:90vh;">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+              </div>
+              <div class="modal-body">
+                <div id="projectAsel" class="carousel slide project-slide" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="item active"> <img src="images\fusion/fusion-1.jpg" alt="item1">
+                    </div>
+                    <div class="item"><img src="images\fusion/fusion-2.jpg" alt="item2">
+                    </div>
+                    <div class="item"> <img src="images\fusion/fusion-3.jpg" alt="item3">
+                    </div>
+                    <ol class="carousel-indicators">
+                      <li class="active" data-slide-to="0" data-target="#projectAsel">
+                      </li>
+                      <li class="" data-slide-to="1" data-target="#projectAsel">
+                      </li>
+                      <li class="" data-slide-to="2" data-target="#projectAsel">
+                      </li>
+                    </ol>
+                  </div>
+                  <a class="left carousel-control" href="#projectAsel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  <a class="right carousel-control" href="#projectAsel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+
+                <div class="grid-text" style="margin-top:2rem;">
+                  Fusion, 2018<br>
+                <p>Digital print on Silk cotton. Part of pattern collection “birds of a feather”, created during my internship at Gunila Axén.</P>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       <div class="grid-item">
         <a href="we-burn.html">
@@ -158,6 +198,12 @@
   <!-- partial -->
   <script src='https://unpkg.com/colcade@0/colcade.js'></script>
   <script src="scripts/colcade.js"></script>
-  <script src="scripts/modal.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+  <script src="scripts/carousel.js"></script>
+
+
 </body>
 </html>

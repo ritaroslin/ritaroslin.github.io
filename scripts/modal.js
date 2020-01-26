@@ -1,13 +1,11 @@
-function onClick(element) {
-  if(window.innerHeight < window.innerWidth){
-    document.getElementById("modal-img").src = element.src;
-    document.getElementById("modal-module").style.display = "block";
-  }
-}
+$(".carousel").swipe({
 
-document.onkeydown = function(evt) {
-    evt = evt || window.event;
-    if (evt.keyCode == 27) {
-          document.getElementById("modal-module").style.display = "none";
-    }
-};
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
