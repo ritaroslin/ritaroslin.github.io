@@ -25,6 +25,24 @@
   width: 100px;
 }
 
+.modal-body {
+  padding:25px;
+}
+
+.modal-header {
+  border-bottom: 0px;
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+
+.modal-content {
+  margin-top:10vh;
+  border-radius: 0px;
+  -webkit-box-shadow: px 8px 8px 8px rgba(0,0,0,0.13);
+  -moz-box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.13);
+  box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.13);
+}
+
 .dark-gray-background {
   background-color: #222222;
 }
@@ -62,24 +80,28 @@
 
 /* Indicators list style */
 .project-slide .carousel-indicators li {
-  border: medium none;
-  border-radius: 0;
+  border: 0px solid #000000;
+  border-radius: 1;
   float: middle;
-  height: 18px;
+  height: 12px;
   margin-bottom: -10px;
   margin-left: 0;
   margin-right: 5px !important;
   margin-top: 0;
-  width: 18px;
+  width: 12px;
   border-radius: 100%;
+
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 .carousel-indicators li {
-    background-color: rgba(111,111,111,0.3) !important;
+background-color: #ffffff30;
 }
 
-.carousel-indicators .active li {
-    background-color: rgba(1,1,1,1) !important;
+.active li {
+    background-color: rgba(255,255,255,1) !important;
 }
 
 /* Indicators images style */
