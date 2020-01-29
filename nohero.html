@@ -14,6 +14,7 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rita Roslin</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -37,16 +38,15 @@
     </div>
   </div>
 
-  <!-- Feed -->
-  <div class="grid">
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
+  <!-- Cards -->
 
-    <!-- Items below -->
-    <div class="grid-item" style="padding:0px">
-      <img src="text\no-hero-text.jpg" style="max-width:100%;cursor:pointer">
+  <div class="masonry">
+
+    <div class="grid-item">
+      No:Hero (2018)
+      <br><br>
+The No:Hero jacket is part of the collection Enter:Void.
+A futuristic dystopia collection based on Ryûtarô Nakamuras classic anime Serial Experiment Lain mixed with the amazing Tokyo Ghoul.
     </div>
 
     <div class="grid-item">
@@ -77,9 +77,8 @@
       <img src="images/nohero/nohero-7.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
   </div>
+  
   <!-- partial -->
-  <script src='https://unpkg.com/colcade@0/colcade.js'></script>
-  <script src="scripts/colcade.js"></script>
   <script src="scripts/modal.js"></script>
 </body>
 </html>

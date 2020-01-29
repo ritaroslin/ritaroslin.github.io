@@ -2,8 +2,8 @@
 <html lang="en" >
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156275433-1"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156275433-1"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -11,10 +11,11 @@
   gtag('config', 'UA-156275433-1');
 </script>
 
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rita Roslin</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rita Roslin</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
@@ -38,16 +39,17 @@
     </div>
   </div>
 
-  <!-- Feed -->
-  <div class="grid">
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
+  <!-- Cards -->
 
-    <!-- Items below -->
-    <div class="grid-item" style="padding:0px">
-      <img src="text\feed-the-simulation-text.jpg" style="max-width:100%;cursor:pointer">
+  <div class="masonry">
+
+    <div class="grid-item">
+        Feed The Simulation (2018)
+<br><br>
+      An homage to classic sci-fi aesthetic and couture opulence.
+      Classic beauty with new artificiall blood 3D-printed accessory with matching printed fingers. Over a 100 individual pieces, all linked and painted by hand.
+      The skirt is made out of handpainted crinolin netting and handmade bias binding, all stitched together by hand.
+      Corsett in italian silk, padded and quilted in a biomechanic inspired pattern.
     </div>
 
     <div class="grid-item">
@@ -63,14 +65,14 @@
     </div>
 
     <div class="grid-item">
-        <img src="images\feed-the-simulation\feed-the-simulation-4.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+      <img src="images\feed-the-simulation\feed-the-simulation-4.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
 
     <div class="grid-item">
       <img src="images\feed-the-simulation\feed-the-simulation-2.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
 
-      <div class="grid-item">
+    <div class="grid-item">
       <img src="images\feed-the-simulation\feed-the-simulation-6.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
 
@@ -80,8 +82,6 @@
 
   </div>
   <!-- partial -->
-  <script src='https://unpkg.com/colcade@0/colcade.js'></script>
-  <script src="scripts/colcade.js"></script>
   <script src="scripts/modal.js"></script>
 </body>
 </html>

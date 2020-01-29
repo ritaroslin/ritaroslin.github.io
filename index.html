@@ -2,8 +2,8 @@
 <html lang="en" >
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156275433-1"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156275433-1"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -11,203 +11,359 @@
   gtag('config', 'UA-156275433-1');
 </script>
 
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rita Roslin</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="css/carousel.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rita Roslin</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel="stylesheet" href="css/carousel.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
 <body>
 
-<header class="header">
-  <a href="index.html" class="logo"><img src="images/logo.png" width="190px"></a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <div class="header">
 
-  <ul class="menu">
-    <li><a href="index.html">Portfolio</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</header>
+    <a href="index.html" class="logo"><img src="images/logo.png" width="190px"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-  <!-- Feed -->
-  <div class="grid">
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
-    <div class="grid-col"></div>
+    <ul class="menu">
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
 
-    <!-- Items below -->
+  </div>
+
+  <!-- Cards -->
+
+  <div class="masonry">
+
     <div class="grid-item">
       <a href="content-aware-lookbook.html">
-      <img src="images\content-aware-lookbook\Content-Aware-000.jpg" style="width:100%;cursor:pointer">
-        </a>
-        <div class="grid-title">
-        Content Aware<br>
-      </div>
-      <div class="grid-category">
-        // Fashion
+        <img src="images\content-aware-lookbook\Content-Aware-000.jpg">
+      </a>
+      <div class="grid-title">
+        <p class="title">Content Aware - Digital Lookbook (2020)</p>
+        <p class="category">// Fashion</p>
       </div>
     </div>
 
     <div class="grid-item">
       <a href="feed-the-simulation.html">
-      <img src="images\feed-the-simulation\feed-the-simulation-1.jpg" style="width:100%;cursor:pointer">
-        </a>
-        <div class="grid-title">
-        Feed The Simulation<br>
-      </div>
-      <div class="grid-category">
-        // Fashion
+        <img src="images\feed-the-simulation\feed-the-simulation-1.jpg">
+      </a>
+      <div class="grid-title">
+        <p class="title">Feed The Simulation (2018)</p>
+        <p class="category">// Fashion</p>
       </div>
     </div>
 
-      <div class="grid-item">
-            <a href="loba.html">
-        <img src="images/loba/loba_01.jpg" style="width:100%;cursor:pointer;">
-            </a>
+    <div class="grid-item">
+      <a href="loba.html">
+        <img src="images/loba/loba_01.jpg">
+      </a>
+      <div class="grid-title">
+        <p class="title">Loba (2018)</p>
+        <p class="category">// Fashion</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <a href="sleepy.html">
+        <img src="images\sleepy\sleepy-1.jpg">
+      </a>
+      <div class="grid-title">
+        <p class="title">Sleepy (2019)</p>
+        <p class="category">// Fashion</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <a href="bjoern-bts.html">
+        <img src="images\bjoern-bts\ju-bjoern-bts-1.jpg">
+      </a>
+      <div class="grid-title">
+        <p class="title">Bjoern - Why, music video BTS (2019)</p>
+        <p class="category">// Fashion</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div data-toggle="modal" data-target="#bjoern-press">
+        <a href="#">
+          <img class="img-responsive center-block" src="images\bjoern-press\bjoern-press-1.jpg" />
+        </a>
         <div class="grid-title">
-          Loba
-        </div>
-        <div class="grid-category">
-          // Fashion
+          <p class="title">Bjoern press photo (2019)</p>
+          <p class="category">// Fashion</p>
         </div>
       </div>
+    </div>
 
-      <div class="grid-item">
-        <a href="sleepy.html">
-        <img src="images\sleepy\sleepy-1.jpg" style="width:100%;cursor:pointer">
-          </a>
+    <div class="grid-item">
+      <div data-toggle="modal" data-target="#bjoern-coverart">
+        <a href="#">
+          <img class="img-responsive center-block" src="images\bjoern-coverart\bjoern-coverart-1.jpg" />
+        </a>
         <div class="grid-title">
-         Sleepy
-        </div>
-        <div class="grid-category">
-          // Fashion
+          <p class="title">Why, coverart (2020)</p>
+          <p class="category">// Artwork</p>
         </div>
       </div>
+    </div>
 
-      <div class="grid-item">
-        <a href="ju.html">
-        <img src="images\ju\ju-2.jpg" style="width:100%;cursor:pointer">
-          </a>
+    <div class="grid-item">
+      <div data-toggle="modal" data-target="#Spectra">
+        <a href="#">
+          <img class="img-responsive center-block" src="images\spectra/spectra-1.jpg" />
+        </a>
         <div class="grid-title">
-          JU
-        </div>
-        <div class="grid-category">
-          // Fashion
+          <p class="title">Spectra (2017)</p>
+          <p class="category">// Print</p>
         </div>
       </div>
+    </div>
 
-      <div class="grid-item">
-        <a href="spectra.html">
-        <img src="images\spectra\spectra-1.jpg" style="width:100%;cursor:pointer">
-          </a>
+    <div class="grid-item">
+      <a href="nobel-creations.html">
+        <img src="images\nobel-creations\nobel-creations-1.jpg">
+      </a>
+      <div class="grid-title">
+        <p class="title">Nobel Creations (2018)</p>
+        <p class="category">// Fashion</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <a href="nohero.html">
+        <img src="images\nohero\nohero-1.jpg">
+      </a>
+      <div class="grid-title">
+        <p class="title">No:Hero (2018)</p>
+        <p class="category">// Fashion</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div data-toggle="modal" data-target="#Fusion">
+        <a href="#">
+          <img class="img-responsive center-block" src="images\fusion/fusion-1.jpg" />
+        </a>
         <div class="grid-title">
-          Spectra
-        </div>
-        <div class="grid-category">
-          // Print
+          <p class="title">Fusion (2018)</p>
+          <p class="category">// Print &nbsp // Illustration</p>
         </div>
       </div>
+    </div>
 
-      <div class="grid-item">
-        <a href="nobel-creations.html">
-        <img src="images\nobel-creations\nobel-creations-1.jpg" style="width:100%;cursor:pointer">
-          </a>
+    <div class="grid-item">
+      <div data-toggle="modal" data-target="#WeBurn">
+        <a href="#">
+          <img class="img-responsive center-block" src="images\we-burn\we-burn-1.jpg" />
+        </a>
         <div class="grid-title">
-          Nobel Creations
-        </div>
-        <div class="grid-category">
-          // Fashion
+          <p class="title">We Burn (2016)</p>
+          <p class="category">// Print &nbsp // Illustration</p>
         </div>
       </div>
+    </div>
 
-      <div class="grid-item">
-        <a href="nohero.html">
-        <img src="images\nohero\nohero-1.jpg" style="width:100%;cursor:pointer">
-          </a>
-        <div class="grid-title">
-          No:Hero
-        </div>
-        <div class="grid-category">
-          // Fashion
-        </div>
+  </div>
+
+
+<!--SLIDESHOWS -->
+
+<div class="modal fade" id="bjoern-press">
+  <div class="modal-dialog" style="height:inherit; margin-bottom:2vh;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
       </div>
-
-      <div class="grid-item">
-
-        <!-- MODAL CAROUSEL CARD -->
-        <div data-toggle="modal" data-target="#projectA">
-            <a href="#">
-              <img class="img-responsive center-block" src="images\fusion/fusion-1.jpg" />
-            </a>
-          <div class="grid-title">
-            Fusion
+      <div class="modal-body">
+        <div id="bjoern-pressSel" class="carousel slide project-slide" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active"> <img src="images\bjoern-press\bjoern-press-1.jpg" alt="item1">
+            </div>
+            <div class="item"><img src="images\bjoern-press\bjoern-press-2.jpg" alt="item2">
+            </div>
+            <div class="item"> <img src="images\bjoern-press\bjoern-press-3.jpg" alt="item3">
+            </div>
+            <ol class="carousel-indicators">
+              <li class="active" data-slide-to="0" data-target="#bjoern-pressSel">
+              </li>
+              <li class="" data-slide-to="1" data-target="#bjoern-pressSel">
+              </li>
+              <li class="" data-slide-to="2" data-target="#bjoern-pressSel">
+              </li>
+            </ol>
           </div>
-          <div class="grid-category">
-            // Print &nbsp // Illustration
+          <a class="left carousel-control" href="#bjoern-pressSel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#bjoern-pressSel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+
+        <div class="grid-text" style="margin-top:2rem;">
+          Bjoern press photo (2019)<br>
+          <p>Bjoern in over-dimenzional shirt and pants.
+Photo by Marcus Nystrand</P>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="bjoern-coverart">
+  <div class="modal-dialog" style="height:inherit; margin-bottom:2vh;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+      <div class="modal-body">
+        <div id="bjoern-coverartSel" class="carousel slide project-slide" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active"> <img src="images\bjoern-coverart\bjoern-coverart-1.jpg" alt="item1">
+            </div>
+            <ol class="carousel-indicators">
+              <li class="active" data-slide-to="0" data-target="#bjoern-coverartSel">
+              </li>
+            </ol>
+          </div>
+          <a class="left carousel-control" href="#bjoern-coverartSel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#bjoern-coverartSel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
 
-        <div class="modal fade" id="projectA">
-          <div class="modal-dialog" style="height:inherit; margin-bottom:2vh;">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
-              </div>
-              <div class="modal-body">
-                <div id="projectAsel" class="carousel slide project-slide" data-interval="false">
-                  <div class="carousel-inner">
-                    <div class="item active"> <img src="images\fusion/fusion-1.jpg" alt="item1">
-                    </div>
-                    <div class="item"><img src="images\fusion/fusion-2.jpg" alt="item2">
-                    </div>
-                    <div class="item"> <img src="images\fusion/fusion-3.jpg" alt="item3">
-                    </div>
-                    <ol class="carousel-indicators">
-                      <li class="active" data-slide-to="0" data-target="#projectAsel">
-                      </li>
-                      <li class="" data-slide-to="1" data-target="#projectAsel">
-                      </li>
-                      <li class="" data-slide-to="2" data-target="#projectAsel">
-                      </li>
-                    </ol>
-                  </div>
-                  <a class="left carousel-control" href="#projectAsel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
-                  <a class="right carousel-control" href="#projectAsel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-                </div>
+        <div class="grid-text" style="margin-top:2rem;">
+          Why, coverart (2020)<br>
+          <p>Coverart for Bjoerns single 'Why'.
+Mixed digital and analog techniques </P>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="grid-text" style="margin-top:2rem;">
-                  Fusion, 2018<br>
-                <p>Digital print on Silk cotton. Part of pattern collection “birds of a feather”, created during my internship at Gunila Axén.</P>
-                  </div>
-                </div>
+<div class="modal fade" id="Spectra">
+  <div class="modal-dialog" style="height:inherit; margin-bottom:2vh;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+      <div class="modal-body">
+        <div id="SpectraSel" class="carousel slide project-slide" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active"> <img src="images\spectra/spectra-1.jpg" alt="item1">
+            </div>
+            <div class="item"><img src="images\spectra/spectra-2.jpg" alt="item2">
+            </div>
+            <div class="item"> <img src="images\spectra/spectra-3.jpg" alt="item3">
+            </div>
+            <ol class="carousel-indicators">
+              <li class="active" data-slide-to="0" data-target="#SpectraSel">
+              </li>
+              <li class="" data-slide-to="1" data-target="#SpectraSel">
+              </li>
+              <li class="" data-slide-to="2" data-target="#SpectraSel">
+              </li>
+            </ol>
+          </div>
+          <a class="left carousel-control" href="#SpectraSel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#SpectraSel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+
+        <div class="grid-text" style="margin-top:2rem;">
+          Spectra (2017)<br>
+          <p>Spectra is inspired of the light waves in the hydrogen particle. Digital print on silk twill.</P>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="Fusion">
+    <div class="modal-dialog" style="height:inherit; margin-bottom:2vh;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <div class="modal-body">
+          <div id="FusionSel" class="carousel slide project-slide" data-interval="false">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="images\fusion/fusion-1.jpg" alt="item1">
               </div>
+              <div class="item"><img src="images\fusion/fusion-2.jpg" alt="item2">
+              </div>
+              <div class="item"> <img src="images\fusion/fusion-3.jpg" alt="item3">
+              </div>
+              <div class="item"> <img src="images\fusion/fusion-4.jpg" alt="item4">
+              </div>
+              <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#FusionSel">
+                </li>
+                <li class="" data-slide-to="1" data-target="#FusionSel">
+                </li>
+                <li class="" data-slide-to="2" data-target="#FusionSel">
+                </li>
+                <li class="" data-slide-to="3" data-target="#FusionSel">
+                </li>
+              </ol>
+            </div>
+            <a class="left carousel-control" href="#FusionSel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#FusionSel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+
+          <div class="grid-text" style="margin-top:2rem;">
+            Fusion (2018)<br>
+            <p>Digital print on Silk cotton. Part of pattern collection “birds of a feather”, created during my internship at Gunila Axén.</P>
             </div>
           </div>
         </div>
-<!-- MODAL CAROUSEL CARD END -->
+      </div>
+    </div>
+  </div>
 
-      <div class="grid-item">
-        <a href="we-burn.html">
-        <img src="images\we-burn\we-burn-1.jpg" style="width:100%;cursor:pointer">
-          </a>
-        <div class="grid-title">
-         We Burn
+  <div class="modal fade" id="WeBurn">
+    <div class="modal-dialog" style="height:inherit; margin-bottom:2vh;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
         </div>
-        <div class="grid-category">
-          // Fashion
+        <div class="modal-body">
+          <div id="WeBurnSel" class="carousel slide project-slide" data-interval="false">
+            <div class="carousel-inner">
+              <div class="item active"> <img src="images/we-burn/we-burn-1.jpg" alt="item1">
+              </div>
+              <div class="item"><img src="images/we-burn/we-burn-2.jpg" alt="item2">
+              </div>
+              <div class="item"> <img src="images/we-burn/we-burn-3.jpg" alt="item3">
+              </div>
+              <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#WeBurnSel">
+                </li>
+                <li class="" data-slide-to="1" data-target="#WeBurnSel">
+                </li>
+                <li class="" data-slide-to="2" data-target="#WeBurnSel">
+                </li>
+              </ol>
+            </div>
+            <a class="left carousel-control" href="#WeBurnSel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#WeBurnSel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+          </div>
+
+          <div class="grid-text" style="margin-top:2rem;">
+            We Burn (2016)<br>
+            <p>Silk organza pants from the collection We Burn, on Anna Vekri.</P>
+            </div>
+          </div>
         </div>
       </div>
-
+    </div>
   </div>
+
+
   <!-- partial -->
-  <script src='https://unpkg.com/colcade@0/colcade.js'></script>
-  <script src="scripts/colcade.js"></script>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
