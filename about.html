@@ -14,29 +14,41 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rita Roslin</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 
-  <header class="header">
-    <a href="index.html" class="logo"><img src="images/logo.png" width="190px"></a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html" class="logo"><img src="images/logo.png" class="logo"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
 
-    <ul class="menu">
-      <li><a href="index.html">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </header>
+    <div class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+    <!-- NAVIGATION END-->
 
-  <!-- Feed -->
+    <!-- Cards -->
 
-    <!-- Items below -->
-<div style="padding: 100px .5rem 0 .5rem;">
-    <div class="grid-item" style="float:left">
-      <div class="grid-text">
-        <p style="margin-top:0px;">Rita Roslin</p>
+    <div class="masonry" style="column-count: 2 !important;">
+    <div class="grid-item">
+        Rita Roslin
+<br><br>
 Fashion Alumni from Istituto Marangoni, Milano<br>
 Currently a bachelor student in Fashion Design at Beckmans Collage of Design, Stockholm.
 <br><br>
@@ -44,9 +56,8 @@ General inquiries, comissions, buy requests:
 <br><u>rita.h.roslin@gmail.com</u>
 <br><br>
 CV available upon request.
-      </div>
     </div>
-</div>
+
 
   <div class="grid-item" style="overflow: hidden;">
       <div id="instagram-feed-demo" class="instagram_feed">

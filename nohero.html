@@ -19,16 +19,28 @@
 </head>
 <body>
 
-  <header class="header">
-    <a href="index.html" class="logo"><img src="images/logo.png" width="190px"></a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html" class="logo"><img src="images/logo.png" class="logo"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
 
-    <ul class="menu">
-      <li><a href="index.html">Portfolio</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </header>
+    <div class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+    <!-- NAVIGATION END-->
 
   <!--Modal module-->
   <div id="modal-module" class="modal-single" onclick="this.style.display='none'">
@@ -77,7 +89,7 @@ A futuristic dystopia collection based on Ryûtarô Nakamuras classic anime Seri
       <img src="images/nohero/nohero-7.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
   </div>
-  
+
   <!-- partial -->
   <script src="scripts/modal.js"></script>
 </body>
