@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156275433-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-156275433-1');
+</script>
+
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rita Roslin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <a href="index.html" class="logo"><img src="images/logo.png" class="logo"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Portfolio</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+    <!-- NAVIGATION END-->
+
+  <!--Modal module-->
+  <div id="modal-module" class="modal-single" onclick="this.style.display='none'">
+    <div class="modal-content-single">
+      <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <img id="modal-img">
+    </div>
+  </div>
+
+  <!-- Cards -->
+
+  <div class="masonry">
+
+    <div class="grid-item">
+      Content Aware - Window Shopping (2020)
+      <br><br>
+      Visual communication for Collaboration project.
+      First look from Content Aware-collection
+      <br><br>
+    </div>
+
+    <div class="grid-item">
+Visual Communication & Art direction:
+@annafebe___
+@felixscheynius
+@juliustuvenvall
+@husmusen
+@h.greenyoungblood
+@manspeterson
+
+<br><br>
+Model: @norafazel<br><br>
+Director of photography: @joelhordegard<br><br>
+1st Assistant Camera: @charliez_akesson<br><br>
+Camera Assistant: @elisabetlindencalatyud<br><br>
+Colorist: @miles.lembke<br><br>
+Choreographer: @filippa<br><br>
+Hair stylist: @inapalms<br><br>
+Hair Stylist assistant: @viktoriasegerbergmakeup<br><br>
+MUA: @josephinegolan_<br><br>
+MUA Assistant: @jenniejonssonmakeup<br><br>
+
+    </div>
+    <div class="grid-item">
+      <img src="images/content-aware-window-shopping/content-aware-cover.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item">
+<div>
+  <div style="position: relative; width: 100%; padding-top: 56.25%;">
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://player.vimeo.com/video/385089489?title=0&byline=0&portrait=0"
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    </div>
+
+  </div>
+  <!-- partial -->
+  <script src="scripts/modal.js"></script>
+</body>
+</html>
