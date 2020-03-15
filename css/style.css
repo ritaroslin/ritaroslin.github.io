@@ -211,7 +211,7 @@ body {
   margin-bottom: 1.61rem;
   width: 100%;
   box-sizing: border-box;
-
+overflow-wrap: break-word;
   color: black;
   text-align: left;
   font-family: AmericanTypewriterStd;
