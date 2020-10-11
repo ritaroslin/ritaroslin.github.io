@@ -15,6 +15,7 @@
 <title>Rita Roslin</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 </head>
 <body>
@@ -52,19 +53,29 @@
 
   <!-- Cards -->
 
-  <div class="masonry">
+  <div class="grid">
 
-    <div class="grid-item">
+    <div class="grid-item" id="calculateHeight">
         Feed The Simulation (2019)
 <br><br>
       An homage to classic sci-fi aesthetic and couture opulence.
-      Classic beauty with new artificiall blood 3D-printed accessory with matching printed fingers. Over a 100 individual pieces, all linked and painted by hand.
-      The skirt is made out of handpainted crinolin netting and handmade bias binding, all stitched together by hand.
-      Corsett in italian silk, padded and quilted in a biomechanic inspired pattern.
     </div>
+
+    <script>
+  // Set true text height
+  var height = document.getElementById("calculateHeight").outerHeight();
+  document.getElementById("calculateHeight").style.height = height;
+    </script>
+
+
 
     <div class="grid-item">
       <img src="images\feed-the-simulation\feed-the-simulation-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item">
+      Classic beauty with new artificiall blood 3D-printed accessory with matching printed fingers. 
+      Over a 100 individual pieces, all linked and painted by hand.
     </div>
 
     <div class="grid-item">
@@ -72,11 +83,20 @@
     </div>
 
     <div class="grid-item">
-      <img src="images\feed-the-simulation\feed-the-simulation-3.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+      The skirt is made out of handpainted crinolin netting and handmade bias binding, all stitched together by hand.
     </div>
 
     <div class="grid-item">
+      <img src="images\feed-the-simulation\feed-the-simulation-3.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+  
+
+    <div class="grid-item">
       <img src="images\feed-the-simulation\feed-the-simulation-4.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
+    </div>
+
+    <div class="grid-item">
+      Corsett in italian silk, padded and quilted in a biomechanic inspired pattern.
     </div>
 
     <div class="grid-item">
@@ -92,7 +112,11 @@
     </div>
 
   </div>
-  <!-- partial -->
-  <script src="scripts/modal.js"></script>
+
+    <!-- scripts -->
+
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/masonry.js"></script>
+
 </body>
 </html>

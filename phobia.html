@@ -15,6 +15,7 @@
   <title>Rita Roslin</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 </head>
 <body>
@@ -52,7 +53,7 @@
 
   <!-- Cards -->
 
-  <div class="masonry">
+  <div class="grid">
 
     <div class="grid-item">
       <img src="images\phobia\phobia-1.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
@@ -102,10 +103,12 @@
       <img src="images\phobia\phobia-12.jpg" style="max-width:100%;cursor:pointer" onclick="onClick(this)">
     </div>
 
-
-
   </div>
-  <!-- partial -->
-  <script src="scripts/modal.js"></script>
+
+    <!-- scripts -->
+
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/masonry.js"></script>
+
 </body>
 </html>
