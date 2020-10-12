@@ -13,6 +13,11 @@ $(document).ready(function () {
     $grid.masonry();
   });
 
+  $(window).resize(function(){
+    $grid.masonry();
+  });
+
 });
+
 
 
