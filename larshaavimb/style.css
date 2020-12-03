@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif&display=swap');
 
 /* GLOBAL */
 
 body {
     color: white;
     background-color: #13131C;
-    font-family: 'PT Serif', serif;
+    font-family: 'Lora', serif;
     overflow-y:scroll;
 }
 
@@ -17,6 +17,8 @@ a {
 .banner {
     background-color: #1F2029;
     margin-bottom: 0.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.3em;
 }
 
 .mainContainer {
@@ -38,6 +40,11 @@ a {
     height: 1em;
 }
 
+.h1 {
+    font-weight: bold;
+    letter-spacing: 0.055em;
+}
+
 .content img {
     float: right;
     margin-top: 1em;
@@ -57,15 +64,14 @@ a {
     }
 
     .treatmentImage {
-
         background-repeat: no-repeat, repeat;
         display: flex;
         align-items: center;
         justify-content: center 
     }
 
-    .description{
-        line-height: 140%;
+    .treatmentText{
+        line-height: 142%;
     }
 
 
@@ -99,16 +105,23 @@ a {
     }
 
     .h1 {
-        font-weight: bold;
         font-size: 1.55em;
         line-height: 0;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
-        letter-spacing: 0.025em;
     }
 
     .contact {
         font-size: 1.25em;
+    }
+
+    .treatmentText {
+        width:96%;
+    }
+
+    .mobileSpacing {
+        width:100%;
+        height: 0em;
     }
 
 }
@@ -141,11 +154,24 @@ a {
     }
 
     .h1 {
-        font-weight: bold;
         font-size: 1.3em;
         line-height: 0;
         margin-top: 0.4em;
         margin-bottom: 0.4em;
     }
+
+    .contact {
+        font-size: 0.95em;
+    }
+
+    .treatmentText {
+        width:100%;
+    }
+
+    .mobileSpacing {
+        width:100%;
+        height: 1em;
+    }
+
 }
 
