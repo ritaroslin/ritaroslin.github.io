@@ -10,7 +10,8 @@ body {
 }
 
 a {
-    color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .banner {
@@ -50,8 +51,13 @@ a {
     border-radius: 0.15em;
     }
 
+    .treatment {
+
+
+    }
+
     .treatmentImage {
-        flex: 1;
+
         background-repeat: no-repeat, repeat;
         display: flex;
         align-items: center;
@@ -100,6 +106,11 @@ a {
         margin-bottom: 0.5em;
         letter-spacing: 0.025em;
     }
+
+    .contact {
+        font-size: 1.25em;
+    }
+
 }
 
 /* MOBILE */
